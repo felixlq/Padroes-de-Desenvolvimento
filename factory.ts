@@ -102,18 +102,18 @@ class Fabrica implements IComputador {
     }
     //Método usado na criação dos Computadores
     criarPedido() {
-        const nomePc: string = readlineSync.question('Nomeie seu PC: ')
-        const tipoPc: string = readlineSync.question('Selecione o tipo [1] ou [2]')
-        const cpuPc: number = readlineSync.question('Qual o clock do seu processador?[4, 5 ou 6 GHz]')
-        const ramPc: number = readlineSync.question('Quanto de memoria vc gostaria? [16, 32, 64 GB]')
-        const hdPc: number = readlineSync.question('Quanto de armazenamento vc gostaria?[2000, 5000, 10000 GB]')
+        const nomePc: string = readlineSync.question('Nomeie seu PC: \n')
+        const tipoPc: string = readlineSync.question('Selecione o tipo de Computador [1]desktop ou [2]servidor:\n')
+        const cpuPc: number = readlineSync.question('Qual o clock do seu processador?[4, 5 ou 6 GHz]\n')
+        const ramPc: number = readlineSync.question('Quanto de memoria vc gostaria? [16, 32, 64 GB]\n')
+        const hdPc: number = readlineSync.question('Quanto de armazenamento vc gostaria?[2000, 5000, 10000 GB]\n')
         switch (tipoPc) {
-            case 'desktop':
+            case '1':
                 let novoComputadorDesk = new DesktopPc(cpuPc, ramPc, hdPc, 'Desktop')
                 console.log(`Computador criado ${nomePc}`)
                 console.log(novoComputadorDesk.toString())
                 break;
-            case 'servidor':
+            case '2':
                 let novoComputadorServ = new Servidor(cpuPc, ramPc, hdPc, 'Servidor')
                 console.log(`Computador criado ${nomePc}`)
                 console.log(novoComputadorServ.toString())
@@ -127,5 +127,5 @@ class Fabrica implements IComputador {
 //CÓDIGO DO CLIENTE
 //Uso o Prototype para chamar o método na classe Fabrica
 console.log("#### Fábrica de Computadores ####")
-Fabrica.prototype.criarPedido
+Fabrica.prototype.criarPedido()
 
