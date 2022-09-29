@@ -15,7 +15,7 @@
 
 import { exit } from "process";
 
-const readlinkSync = require('readline-sync');
+const readlinkSync = require('readline-sync');  //Biblioteca importada para os Imputs
 
 abstract class Veiculo {
     modelo: string;
@@ -53,11 +53,10 @@ class Pickup extends Veiculo {
         this.combustivel = combustivel
     }
 }
-
+//Classe aplicação para criação dos objetos e Array que será clonado
 class Aplicacao extends Veiculo {
 
     escolheCarro() {
-        //let garagem: object[] = []
         let i: number = 0
         for (i = 1; i <= 6; i++) {
             let tipoVeiculo: string = readlinkSync.question('Que tipo de carro pretende criar? [1] Sedan / [2] Pickup / [0] Sair\n')
@@ -92,7 +91,7 @@ class Aplicacao extends Veiculo {
         }
         return garagem
     }
-
+    // Cria o clone do Array garagem retornando um Array
     clone() {
         let publicGaragem: object[] = Object.assign({}, garagem)
         return publicGaragem
