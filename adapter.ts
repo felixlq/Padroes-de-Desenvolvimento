@@ -53,3 +53,22 @@ console.log('Pato Adaptado');
 const patoCiscador = new PatoAdaptado(animal1)
 console.log(patoCiscador.grasnar())
 console.log(patoCiscador.voar());
+
+
+
+//TERMINAL 
+
+/*PS E:\Softex\TypeScript\Padroes de Desenvolvimento> npm start
+
+> factory@1.0.0 start
+> ts-node adapter.ts
+
+Galinha Padrão
+co-có
+ciscando
+
+
+Pato Adaptado
+co-có
+ciscando
+PS E:\Softex\TypeScript\Padroes de Desenvolvimento>*/
