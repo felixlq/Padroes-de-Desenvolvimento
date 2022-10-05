@@ -4,7 +4,7 @@
   "description": "",
   "main": "factory.js",
   "scripts": {
-    "start": "ts-node prototype.ts"
+    "start": "ts-node decorator.ts"
   },
   "keywords": [],
   "author": "",
