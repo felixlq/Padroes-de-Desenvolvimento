@@ -4,7 +4,7 @@
   "description": "",
   "main": "factory.js",
   "scripts": {
-    "start": "ts-node adapter.ts"
+    "start": "ts-node strategy.ts"
   },
   "keywords": [],
   "author": "",
