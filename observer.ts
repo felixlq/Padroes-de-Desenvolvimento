@@ -138,8 +138,8 @@ let txtEditor = new TextEditor(novoTexto)
 
 let contador: boolean = true
 while (contador == true) {
-    console.log('\n\n##### EDITOR DE TEXTO #####')
-    var menuOpcoes = ['VER TEXTO', 'NOVO TEXTO', 'APAGAR TEXTO']
+    console.log('\n\n##### LISTA DE COMPRAS #####')
+    var menuOpcoes = ['VER LISTA', 'NOVO ITEM', 'APAGAR ITEM']
     var index: number = readlinesync.keyInSelect(menuOpcoes, 'Selecione sua opcao: \n\n')
 
     if (index == 0) {
@@ -151,13 +151,13 @@ while (contador == true) {
         let cont: boolean = true
         while (cont == true) {
             var controler: number = 1
-            var escreverTexto: string = readlinesync.question("Escreva o texto desejado: ")
+            var escreverTexto: string = readlinesync.question("Escreva o texto desejado [EOF - para sair]: ")
             if (escreverTexto == 'EOF') {
                 cont = false
                 break
 
             } else {
-                var numeroLinha: number = readlinesync.question("Qual linha deseja inserir o texto? ")
+                var numeroLinha: number = readlinesync.question("Em qual linha deseja inserir o texto? ")
                 novoTexto.notifyObserverTextEditor()
             }
         }
