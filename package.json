@@ -4,7 +4,7 @@
   "description": "",
   "main": "factory.js",
   "scripts": {
-    "start": "ts-node strategy.ts"
+    "start": "ts-node observer.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
     "@types/node": "^18.7.18",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "turf-multilinestring": "^1.0.2"
   }
 }
