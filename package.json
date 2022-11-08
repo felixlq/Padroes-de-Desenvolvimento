@@ -4,7 +4,7 @@
   "description": "",
   "main": "factory.js",
   "scripts": {
-    "start": "ts-node observer.ts"
+    "start": "ts-node factory.ts"
   },
   "keywords": [],
   "author": "",

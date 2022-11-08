@@ -111,12 +111,12 @@ class Fabrica implements IComputador {
             case '1':
                 let novoComputadorDesk = new DesktopPc(cpuPc, ramPc, hdPc, 'Desktop')
                 console.log(`Computador criado ${nomePc}`)
-                console.log(novoComputadorDesk.toString())
+                console.table(novoComputadorDesk.toString())
                 break;
             case '2':
                 let novoComputadorServ = new Servidor(cpuPc, ramPc, hdPc, 'Servidor')
                 console.log(`Computador criado ${nomePc}`)
-                console.log(novoComputadorServ.toString())
+                console.table(novoComputadorServ.toString())
                 break;
         }
     }
@@ -128,4 +128,3 @@ class Fabrica implements IComputador {
 //Uso o Prototype para chamar o método na classe Fabrica
 console.log("#### Fábrica de Computadores ####")
 Fabrica.prototype.criarPedido()
-
